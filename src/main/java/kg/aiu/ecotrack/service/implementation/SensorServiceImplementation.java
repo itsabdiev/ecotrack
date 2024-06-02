@@ -1,5 +1,6 @@
 package kg.aiu.ecotrack.service.implementation;
 
+import kg.aiu.ecotrack.cache.CacheStore;
 import kg.aiu.ecotrack.entity.Sensor;
 import kg.aiu.ecotrack.repository.SensorRepository;
 import kg.aiu.ecotrack.service.SensorService;
@@ -19,6 +20,7 @@ import org.springframework.stereotype.Service;
 public class SensorServiceImplementation implements SensorService {
 
     SensorRepository sensorRepository;
+    CacheStore<List<Sensor>> cacheStore;
 
     @Override
     public boolean existsByModel(String model) {
@@ -47,6 +49,12 @@ public class SensorServiceImplementation implements SensorService {
 
     @Override
     public List<Sensor> getAll() {
-        return sensorRepository.findAll();
+        List<Sensor> all = cacheStore.get("All");
+        if (all != null) {
+            return all;
+        }
+        List<Sensor> dbList = sensorRepository.findAll();
+        cacheStore.add("All",dbList);
+        return dbList;
     }
 }

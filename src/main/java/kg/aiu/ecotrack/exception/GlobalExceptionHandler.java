@@ -40,7 +40,7 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(BadRequestException.class)
     @ResponseStatus(HttpStatus.BAD_REQUEST)
-    public MessageResponse notFoundExceptionHandling(BadRequestException bre) {
+    public MessageResponse badRequestExceptionHandling(BadRequestException bre) {
         return MessageResponse.builder()
                 .statusCode(400)
                 .message(bre.getMessage())
@@ -53,6 +53,24 @@ public class GlobalExceptionHandler {
         return MessageResponse.builder()
                 .statusCode(400)
                 .message(uaee.getMessage())
+                .build();
+    }
+
+    @ExceptionHandler(DataForSensorAlreadyExistsException.class)
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    public MessageResponse dataForSensorAlreadyExistExceptionHandling(DataForSensorAlreadyExistsException dfsaee) {
+        return MessageResponse.builder()
+                .statusCode(400)
+                .message(dfsaee.getMessage())
+                .build();
+    }
+
+    @ExceptionHandler(SensorAlreadyExistException.class)
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    public MessageResponse sensorAlreadyExistExceptionHandling(SensorAlreadyExistException saee) {
+        return MessageResponse.builder()
+                .statusCode(400)
+                .message(saee.getMessage())
                 .build();
     }
 

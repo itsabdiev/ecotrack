@@ -49,7 +49,7 @@ public class AuthenticationEndpoint {
 
     public AuthenticationResponse generateNewAccessAndRefreshTokenByRefreshToken(String refreshToken) {
         if (jsonWebTokenService.isTokenExpired(refreshToken)) {
-            throw new JwtException("Refresh has been expired");
+            throw new JwtException("Refresh token has been expired");
         }
         String username = jsonWebTokenService.extractUsername(refreshToken);
         User user = userService.loadUserByEmail(username);

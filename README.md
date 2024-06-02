@@ -1,5 +1,5 @@
 # TechTrack
-TechTrack develops a platform for monitoring and managing technical equipment such as industrial robots, manufacturing equipment, quality control systems, etc. 
+EcoTrack develops a platform for monitoring and managing environmental data from various sensors and devices. Currently, the company needs a system to manage data on air qualit
 
 
 ### Features

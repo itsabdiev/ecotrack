@@ -8,7 +8,7 @@ EcoTrack develops a platform for monitoring and managing environmental data from
 * Integration with PostgreSQL for data storage
 * API documentation using OpenAPI
 * JWT-based authentication <br>
-* Link to youtube presentation https://youtu.be/07jY_g4iPuA 
+* Link to youtube presentation https://youtu.be/KDt-yBWqLZo
 <br>
 
 <img align="center" alt="Java " width="550px" src="https://res.cloudinary.com/software-updater/image/upload/v1717343280/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2024-06-02_214724_nmozym.png" />  <br />
@@ -22,7 +22,7 @@ EcoTrack develops a platform for monitoring and managing environmental data from
 
 <img align="center" alt="Java " width="550px" src="https://res.cloudinary.com/software-updater/image/upload/v1717343280/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2024-06-02_214652_fwjtm5.png" />  <br />
     <br />     
-<img align="center" alt="Java " width="550px" src="" />  <br />
+<img align="center" alt="Java " width="550px" src="https://res.cloudinary.com/software-updater/image/upload/v1717349275/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2024-06-02_232701_bbpbqs.png" />  <br />
     <br />   
 
     

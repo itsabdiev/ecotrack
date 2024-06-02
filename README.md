@@ -28,8 +28,8 @@ EcoTrack develops a platform for monitoring and managing environmental data from
     
 **How to run the application**
 ```
-git clone https://github.com/itsabdiev/techtrack.git techtrack
-cd techtrack
+git clone https://github.com/itsabdiev/ecotrack.git ecotrack
+cd ecotrack
 change application properties according to your database
 mvn spring-boot:run 
 ```
